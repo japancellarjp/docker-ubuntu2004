@@ -46,7 +46,7 @@ cd docker-ubuntu2004
 docker run --rm \
   -d \
   --name ubuntu2004 \
-  -v $(pwd)/test/supervisord.conf.minimal:/supervisord.conf.minimal \ 
+  -v $(pwd)/test/supervisord.conf.minimal:/supervisord.conf.minimal \
   japancellarjp/docker-ubuntu2004 \
   /usr/local/bin/supervisord -c /supervisord.conf.minimal
 docker exec ubuntu2004 supervisorctl -c /supervisord.conf.minimal version
@@ -84,11 +84,12 @@ docker run --rm \
 |supervisord|4.2.0|https://github.com/Supervisor/supervisor |pip|
 |duply|2.2-2|https://duply.net/ |apt|
 |duplicity|0.8.11.1612-1|http://duplicity.nongnu.org/index.html |apt|
-|python3-boto3|1.9.253-1|https://github.com/boto/boto3 |apt|
 |python3-ijson|2.3-2.1|https://github.com/ICRAR/ijson |apt|
 |mysql-connector-python|8.0.20|https://dev.mysql.com/doc/connector-python/en/ |pip|
 |timeout-decorator|0.4.1|https://github.com/pnpnpn/timeout-decorator |pip|
 |slackclient|2.7.1|https://github.com/slackapi/python-slackclient |pip|
+|docker-py|4.2.1|https://github.com/docker/docker-py |pip|
+|boto|2.49.0|https://github.com/boto/boto |pip|
 |michaloo/go-cron|v0.0.2|https://github.com/michaloo/go-cron ||
 |japancellarjp/go-redis-setlock|v0.0.1.1|https://github.com/japancellarjp/go-redis-setlock |forked from fujiwara/go-redis-setlock|
 
@@ -108,11 +109,12 @@ Apache License 2.0
 |supervisord|BSD-derived|https://github.com/Supervisor/supervisor/blob/master/COPYRIGHT.txt ||
 |duply|GPLv2|https://duply.net/index.php?title=Duply-license ||
 |duplicity|GPLv2|http://duplicity.nongnu.org/vers8/CHANGELOG ||
-|python3-boto3|Apache-2.0|https://github.com/boto/boto3/blob/develop/LICENSE ||
 |python3-ijson|MIT|https://github.com/raimon49/pip-licenses/blob/master/LICENSE ||
 |mysql-connector-python|GPL,etc|https://downloads.mysql.com/docs/licenses/connector-python-8.0-gpl-en.pdf ||
 |timeout-decorator|MIT|https://github.com/pnpnpn/timeout-decorator/blob/master/LICENSE.txt ||
 |slackclient|MIT|https://github.com/slackapi/python-slackclient/blob/master/LICENSE ||
+|docker-py|4.2.1|https://github.com/docker/docker-py/blob/master/LICENSE ||
+|boto|AS IS|https://github.com/boto/boto/blob/develop/LICENSE ||
 |michaloo/go-cron|MIT|https://github.com/michaloo/go-cron/blob/master/LICENSE ||
 |japancellarjp/go-redis-setlock|MIT|https://github.com/japancellarjp/go-redis-setlock/blob/master/LICENSE ||
 

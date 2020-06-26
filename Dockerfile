@@ -19,7 +19,6 @@ RUN apt-get update -qq && \
     mariadb-client-core-10.3 \
     redis-tools          \
     python3-pip          \
-    python3-boto3        \
     python3-ijson        \
     && \
   apt-get clean && \
@@ -35,8 +34,8 @@ RUN echo "deb [signed-by=/usr/share/keyrings/cloud.google.gpg] http://packages.c
   apt-get clean && \
   rm -rf /var/lib/apt/lists/*
 
-# supervisord, mysql-connector-python, timeout-decorator, google-cloud-pubsub, slackclient, docker
-RUN pip3 install supervisor==4.2.0 mysql-connector-python timeout-decorator google-cloud-pubsub slackclient docker && \
+# supervisord, mysql-connector-python, timeout-decorator, google-cloud-pubsub, slackclient, docker, boto
+RUN pip3 install supervisor==4.2.0 mysql-connector-python timeout-decorator google-cloud-pubsub slackclient docker boto && \
   mkdir -p /etc/supervisord/conf.d && \
   mkdir -p /var/log/supervisord && \
   mkdir -p /var/run/supervisord && \
