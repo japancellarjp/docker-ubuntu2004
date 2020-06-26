@@ -113,7 +113,7 @@ Apache License 2.0
 |mysql-connector-python|GPL,etc|https://downloads.mysql.com/docs/licenses/connector-python-8.0-gpl-en.pdf ||
 |timeout-decorator|MIT|https://github.com/pnpnpn/timeout-decorator/blob/master/LICENSE.txt ||
 |slackclient|MIT|https://github.com/slackapi/python-slackclient/blob/master/LICENSE ||
-|docker-py|4.2.1|https://github.com/docker/docker-py/blob/master/LICENSE ||
+|docker-py|Apache-2.0|https://github.com/docker/docker-py/blob/master/LICENSE ||
 |boto|AS IS|https://github.com/boto/boto/blob/develop/LICENSE ||
 |michaloo/go-cron|MIT|https://github.com/michaloo/go-cron/blob/master/LICENSE ||
 |japancellarjp/go-redis-setlock|MIT|https://github.com/japancellarjp/go-redis-setlock/blob/master/LICENSE ||
